@@ -1,0 +1,211 @@
+/* Global styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif; /* A clean, modern font */
+    background-color: #f5f5f5; /* Soft gray background for better readability */
+  }
+  
+  
+ 
+  /* Main weather app container */
+  .weather-app {
+    align-items: center;
+    width: 308px;
+    height: 512px; 
+    border-radius: 20px; 
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2); 
+    padding: 1em;
+    margin: 20px auto;
+    overflow-y: auto;
+    position: relative;
+    height: 100vh;
+    background-image: url('../../assets/BackGroundImage.jpg'); 
+     /* Add your image URL */
+    background-size: cover; /* Adjust to cover the entire area */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Allow vertical scrolling if content overflows */
+  }
+
+
+
+  .sub-weather-app {
+  justify-content: space-between;  /* Ensure space between elements */
+  align-items: center;  /* Align items vertically */
+  padding: 0.5em;  
+  margin-top: 135px;
+  position: relative; /* Ensure proper z-index context */
+  z-index: 2;
+  }
+  
+ 
+  
+  
+  .weather-app input {
+    flex: 1;  /* Allow the input to take the remaining space */
+  padding: 0.5em;  /* Padding inside the input */
+  border: 1px solid #ffffff;  /* Border styling */
+  border-radius: 5px;  /* Rounded corners */
+  font-size: medium; 
+  }
+  
+  .sub-weather-app button {
+   margin-left: 10px;  /* Space between input and button */
+   padding: 0.4em 1em;  /* Padding inside the button */
+  font-size: 1em;  /* Standard font size */
+  border-radius: 5px;  /* Rounded corners */
+  background-color: #55534e;  /* Primary button color */
+  color: white;  /* White text on the button */
+  cursor: pointer;
+  margin-right: -13px;
+  }
+  
+  .weather-app button:hover {
+    background-color: #0056b3;
+  }
+  
+  
+  /* Loading, error, and weather information styling */
+  .weather-app .loading {
+    text-align: center; /* Center align for loading message */
+  }
+  
+  .weather-app .error {
+    color: red; /* Red color for error messages */
+    text-align: center; /* Center align error message */
+  }
+  
+  .weather-app .weather-info {
+    text-align: left; /* Align text to the left */
+    line-height: 1.5; /* Increase line spacing for readability */
+   margin-top: 179px;
+    margin-left: 65px;
+  }
+  
+  .weather-app .weather-info h2 {
+    margin: 0; /* Remove margin for headings */
+    color: #333; /* Dark gray for heading text */
+  }
+  .weather-app .weather-info p{
+    font-style: italic;
+    font-weight: 700;
+    color: #e9e9e9;
+  }
+ 
+ .date-time .date {
+    color: #f5f5f5;
+    top: auto;
+    margin-top: -179px;
+    font-size: 25px;
+    
+  }
+  .time {
+    margin-top: 5px;
+    color: #e9e9e9;
+    font-size: 14px;
+    margin-left: 4px;
+   
+  }
+
+ .temp {
+  margin-top: -20px;
+  margin-left: 22px;
+  font-size: 50px;
+  
+}
+
+.weather-info .cityName {
+  margin-top: -47px;
+    color: white;
+    justify-content: center;
+    margin-left: 40px;
+    font-size: 14px;
+}
+
+.Images {
+  display: flex;
+  justify-content: space-between;
+  margin-left: -70px 
+}
+
+.wind-info, .humidity-info {
+  display: flex; /* Keep image and text on the same row */
+  align-items: center; /* Center the content vertically */
+}
+
+.wind-info img, .humidity-info img {
+  width: 30px; /* Set the width for images */
+  height: 30px; /* Set the height for images */
+}
+
+.wind-info p, .humidity-info p {
+  margin-left: 10px; /* Add a margin between the image and text */
+  font-size: 1em; /* Standard font size */
+  color: #333; /* Text color */
+}
+
+.sun-images {
+  display: flex;
+  justify-content: space-between;
+  margin-left: -70px ;
+  margin-top: 19px;
+}
+
+.sunrise-info, .sunset-info {
+  display: flex; /* Keep image and text on the same row */
+  align-items: center; /* Center the content vertically */
+}
+
+.sunrise-info img, .sunset-info img {
+  width: 30px; /* Set the width for images */
+  height: 30px; /* Set the height for images */
+}
+
+.sunrise-info p, .sunset-info p {
+  margin-left: 10px; /* Add a margin between the image and text */
+  font-size: 1em; /* Standard font size */
+  color: #333; /* Text color */
+}
+
+
+.latlon-images {
+  display: flex;
+  justify-content: space-between;
+  margin-left: -70px ;
+  margin-top: 19px;
+}
+
+.lat-info, .lon-info {
+  display: flex; /* Keep image and text on the same row */
+  align-items: center; /* Center the content vertically */
+}
+
+.lat-info img, .lon-info img {
+  width: 30px; /* Set the width for images */
+  height: 30px; /* Set the height for images */
+}
+
+.lat-info p, .lon-info p {
+  margin-left: 10px; /* Add a margin between the image and text */
+  font-size: 1em; /* Standard font size */
+  color: #333; /* Text color */
+}
+
+
+
+
+
+ /* Responsive design */
+ @media (max-width: 600px) {
+  .weather-app {
+    padding: 0.5em; /* Reduce padding on smaller screens */
+  }
+
+  .weather-app input {
+    width: 70%; /* Adjust width for smaller screens */
+  }
+
+  .weather-app button {
+    padding: 0.4em 0.8em; /* Adjust padding for smaller screens */
+  }
+}
