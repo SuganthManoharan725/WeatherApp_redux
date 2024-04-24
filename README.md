@@ -2,6 +2,9 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+![Screenshot (180)](https://github.com/SuganthManoharan725/WeatherApp_redux/assets/133743755/19d2e0e5-cae0-41bd-b18c-1e8c64ea3c84)
+
+
 ## Available Scripts
 
 In the project directory, you can run:
